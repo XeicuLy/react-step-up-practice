@@ -33,7 +33,6 @@ const App = () => {
       <br />
       <InlineStyle />
       <br />
-      <br />
       <CssModules />
     </div>
   );
