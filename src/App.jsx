@@ -1,5 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import { ChildArea } from './components/ChildArea';
+import { CssModules } from './components/CssModules';
+import { InlineStyle } from './components/InlineStyle';
 
 const App = () => {
   const [text, setText] = useState('');
@@ -18,7 +20,7 @@ const App = () => {
   const temp = useMemo(() => {
     1 + 3;
   }, []);
-  console.log(temp);
+  // console.log(temp);
 
   return (
     <div className='App'>
@@ -27,6 +29,12 @@ const App = () => {
       <br />
       <button onClick={toggleOpen}>表示</button>
       <ChildArea open={open} onClickClose={onClickClose} />
+      <br />
+      <br />
+      <InlineStyle />
+      <br />
+      <br />
+      <CssModules />
     </div>
   );
 };
