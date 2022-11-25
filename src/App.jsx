@@ -2,6 +2,7 @@ import { useState, useCallback, useMemo } from 'react';
 import { ChildArea } from './components/ChildArea';
 import { CssModules } from './components/CssModules';
 import { InlineStyle } from './components/InlineStyle';
+import { StyledJsx } from './components/StyledJsx';
 
 const App = () => {
   const [text, setText] = useState('');
@@ -34,6 +35,8 @@ const App = () => {
       <InlineStyle />
       <br />
       <CssModules />
+      <br />
+      <StyledJsx />
     </div>
   );
 };
