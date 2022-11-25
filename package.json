@@ -10,8 +10,12 @@
     "format": "eslint src --fix && prettier --write src"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6",
+    "styled-jsx": "^5.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
@@ -26,6 +30,7 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.0",
+    "sass": "^1.56.1",
     "vite": "^3.2.3"
   },
   "volta": {

@@ -1,5 +1,10 @@
 import { useState, useCallback, useMemo } from 'react';
 import { ChildArea } from './components/ChildArea';
+import { CssModules } from './components/CssModules';
+import { Emotion } from './components/Emotion';
+import { InlineStyle } from './components/InlineStyle';
+import { StyledComponents } from './components/StyledComponents';
+import { StyledJsx } from './components/StyledJsx';
 
 const App = () => {
   const [text, setText] = useState('');
@@ -18,7 +23,7 @@ const App = () => {
   const temp = useMemo(() => {
     1 + 3;
   }, []);
-  console.log(temp);
+  // console.log(temp);
 
   return (
     <div className='App'>
@@ -27,6 +32,17 @@ const App = () => {
       <br />
       <button onClick={toggleOpen}>表示</button>
       <ChildArea open={open} onClickClose={onClickClose} />
+      <br />
+      <br />
+      <InlineStyle />
+      <br />
+      <CssModules />
+      <br />
+      <StyledJsx />
+      <br />
+      <StyledComponents />
+      <br />
+      <Emotion />
     </div>
   );
 };
